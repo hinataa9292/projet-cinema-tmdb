@@ -1,11 +1,7 @@
 # Pipeline "analyse des genres" construit dans MongoDB Compass
 # puis exporté en Python (Aggregations > Export Code).
 # Collection source : films — Résultat : stats_genres_compass
-
-
-
-
-pipeline =[
+pipeline_genres =[
     {
         '$unwind': '$genres'
     }, {
